@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Дёмшина Анна</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --card-bg: #262626;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --accent: #4f46e5;
+            --accent-hover: #6366f1;
+            --tag-bg: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .profile-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+        }
+        /* Стили для реального фото */
+        .avatar-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+        }
+        .profile-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .profile-info p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+        .section {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #333;
+        }
+        h2 {
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .skill-category h3 {
+            margin: 0 0 12px 0;
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .skill-tags, .project-techs, .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: var(--tag-bg);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .project-card {
+            background: #1f1f1f;
+            padding: 22px;
+            border-radius: 10px;
+            border: 1px solid #2d2d2d;
+            margin-bottom: 20px;
+        }
+        .project-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        .project-desc {
+            font-size: 14px;
+            color: #d4d4d4;
+            margin: 12px 0;
+        }
+        .tech-title, .link-title {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 10px 0 6px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .tag-tech {
+            background: #251b4f;
+            color: #c7bcff;
+            border: 1px solid #4338ca;
+        }
+        .tag-link {
+            background: #162e26;
+            color: #7bf5c1;
+            border: 1px solid #065f46;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .tag-link:hover {
+            opacity: 0.8;
+        }
+        .contacts-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contacts-list li {
+            margin-bottom: 10px;
+        }
+        .contacts-list a {
+            color: var(--accent-hover);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Титульный блок -->
+    <div class="profile-card">
+        <!-- Поменял на тег картинки, просто положи photo.jpg рядом с этим файлом -->
+        <img class="avatar-img" src="Фото.jpg" alt="Фото">
+        <div class="profile-info">
+            <h1>Дёмшина Анна Александровна</h1>
+            <p>Студент направления "Информатика и вычислительная техника" (профиль: "Программное обеспечение автоматизированных систем"), фокус на проектировании информационных систем, веб-разработке и ПО автоматизированных систем.</p>
+        </div>
+    </div>
+
+    <!-- Навыки -->
+    <div class="section">
+        <h2>Ключевые навыки</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Языки программирования</h3>
+                <div class="skill-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">HTML5 / CSS3</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Инструменты и технологии</h3>
+                <div class="skill-tags">
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">Java Swing</span>
+                    <span class="tag">IntelliJ IDEA</span>
+                    <span class="tag">XAMPP / PDO</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Базы данных</h3>
+                <div class="skill-tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MariaDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Личные качества и языки</h3>
+                <div class="skill-tags">
+                    <span class="tag">Английский B2</span>
+                    <span class="tag">Коммуникабельность</span>
+                    <span class="tag">Работа в команде</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Образование -->
+    <div class="section">
+        <h2>Образование</h2>
+        <p><strong>Уральский государственный экономический университет (УрГЭУ)</strong></p>
+        <p>Институт цифровых технологий управления и информационной безопасности</p>
+        <p>Направление: 09.03.01 Информатика и вычислительная техника</p>
+        <p>Направленность (профиль): Программное обеспечение автоматизированных систем | 4 курс</p>
+    </div>
+
+    <!-- Проекты -->
+    <div class="section">
+        <h2>Проекты и лабораторные работы</h2>
+        
+        <!-- Проект 1 -->
+        <div class="project-card">
+            <h3>Веб-приложение «Дневник ментального здоровья»</h3>
+            <div class="project-desc">Разработка многоуровневой информационной системы для психологического самомониторинга. Включает сессионную регистрацию, интерактивный интерфейс фиксации эмоций, switch-алгоритм генерации советов и встроенный опросник депрессии PHQ-9 с автоматическим подсчетом баллов.</div>
+            
+            <div class="tech-title">Стек технологий:</div>
+            <div class="project-techs">
+                <span class="tag tag-tech">PHP (PDO)</span>
+                <span class="tag tag-tech">MySQL / MariaDB</span>
+                <span class="tag tag-tech">XAMPP</span>
+                <span class="tag tag-tech">HTML5 / CSS3</span>
+            </div>
+
+            <div class="link-title">Интерактивы и отчетные материалы:</div>
+            <div class="project-links">
+                <a class="tag tag-link" href="#">🔗 Исходный код скриптов</a>
+                <a class="tag tag-link" href="#">📊 Физическая схема БД (Дизайнер)</a>
+                <a class="tag tag-link" href="#">📐 UML-диаграмма классов</a>
+                <a class="tag tag-link" href="#">📄 PDF-отчет по курсовой</a>
+            </div>
+        </div>
+
+        <!-- Проект 2 -->
+        <div class="project-card">
+            <h3>Десктопное приложение «Математическая игра»</h3>
+            <div class="project-desc">Создание интерактивной кроссплатформенной игры с графическим интерфейсом на базе ООП-парадигмы. Реализованы алгоритмы случайной генерации арифметических задач с адаптивной сложностью, проверка ответов, динамический таймер (javax.swing.Timer) и система сохранения рекордов.</div>
+            
+            <div class="tech-title">Стек технологий:</div>
+            <div class="project-techs">
+                <span class="tag tag-tech">Java Core</span>
+                <span class="tag tag-tech">Java Swing (GUI)</span>
+                <span class="tag tag-tech">JVM</span>
+                <span class="tag tag-tech">Random API</span>
+            </div>
+
+            <div class="link-title">Интерактивы и отчетные материалы:</div>
+            <div class="project-links">
+                <a class="tag tag-link" href="#">📦 Исполняемый файл (MathGame.jar)</a>
+                <a class="tag tag-link" href="#">📐 UML-структура классов</a>
+                <a class="tag tag-link" href="#">💬 Карта сценариев диалога</a>
+                <a class="tag tag-link" href="#">📄 PDF-отчет по ООП</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Контакты -->
+    <div class="section">
+        <h2>Контакты</h2>
+        <ul class="contacts-list">
+            <li><strong>Email:</strong> <a href="mailto:annademshina05@gmail.com">annademshina05@gmail.com</a></li>
+            <li><strong>Telegram:</strong> <a href="#">@uselessdem</a></li>
+            <li><strong>GitHub:</strong> <a href="#">://https://github.com/dem-wtd21</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
